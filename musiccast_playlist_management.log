@@ -1,54 +1,8 @@
-GET /YamahaExtendedControl/v1/netusb/getMcPlaylistName HTTP/1.1
-CONTENT-TYPE: text/xml; charset="utf-8"
-User-Agent: MusicCast/5.30 (Android)
-X-AppName: MusicCast/5.30 (Android)
-X-AppPort: 43697
-Accept: */*
-Accept-Language: en-us
-Host: 10.144.1.158
-Connection: Keep-Alive
-Accept-Encoding: gzip
-
-HTTP/1.1 200 OK
-Server: Network_Module/1.0 (CD-NT670D)
-Content-Type: application/json
-Content-Length: 98
-
+GET /YamahaExtendedControl/v1/netusb/getMcPlaylistName
 {"response_code":0,"name_list":["Playlist 1","Playlist 2","Playlist 3","Playlist 4","Playlist 5"]}
 
-GET /YamahaExtendedControl/v1/netusb/getMcPlaylist?bank=1&index=0 HTTP/1.1
-CONTENT-TYPE: text/xml; charset="utf-8"
-User-Agent: MusicCast/5.30 (Android)
-X-AppName: MusicCast/5.30 (Android)
-X-AppPort: 43697
-Accept: */*
-Accept-Language: en-us
-Host: 10.144.1.158
-Connection: Keep-Alive
-Accept-Encoding: gzip
-
-HTTP/1.1 200 OK
-Server: Network_Module/1.0 (CD-NT670D)
-Content-Type: application/json
-Content-Length: 1647
-
+GET /YamahaExtendedControl/v1/netusb/getMcPlaylist?bank=1&index=0
 {"response_code":0,"max_line":11,"bank":1,"index":0,"track_info":[{"input":"server","text":"Hello","thumbnail":"http:\/\/10.144.1.162:32469\/proxy\/df5def65beafa7527493\/albumart.jpg","attribute":63},{"input":"server","text":"Send My Love (To Your New Lover)","thumbnail":"http:\/\/10.144.1.162:32469\/proxy\/df5def65beafa7527493\/albumart.jpg","attribute":63},{"input":"server","text":"I Miss You","thumbnail":"http:\/\/10.144.1.162:32469\/proxy\/df5def65beafa7527493\/albumart.jpg","attribute":63},{"input":"server","text":"When We Were Young","thumbnail":"http:\/\/10.144.1.162:32469\/proxy\/df5def65beafa7527493\/albumart.jpg","attribute":63},{"input":"server","text":"Remedy","thumbnail":"http:\/\/10.144.1.162:32469\/proxy\/df5def65beafa7527493\/albumart.jpg","attribute":63},{"input":"server","text":"Water Under the Bridge","thumbnail":"http:\/\/10.144.1.162:32469\/proxy\/df5def65beafa7527493\/albumart.jpg","attribute":63},{"input":"server","text":"River Lea","thumbnail":"http:\/\/10.144.1.162:32469\/proxy\/df5def65beafa7527493\/albumart.jpg","attribute":63},{"input":"server","text":"Love in the Dark","thumbnail":"http:\/\/10.144.1.162:32469\/proxy\/df5def65beafa7527493\/albumart.jpg","attribute":63},{"input":"server","text":"Million Years Ago","thumbnail":"http:\/\/10.144.1.162:32469\/proxy\/df5def65beafa7527493\/albumart.jpg","attribute":63},{"input":"server","text":"All I Ask","thumbnail":"http:\/\/10.144.1.162:32469\/proxy\/df5def65beafa7527493\/albumart.jpg","attribute":63},{"input":"server","text":"Sweetest Devotion","thumbnail":"http:\/\/10.144.1.162:32469\/proxy\/df5def65beafa7527493\/albumart.jpg","attribute":63}]}
 
-
-GET /YamahaExtendedControl/v1/netusb/manageMcPlaylist?bank=1&type=play&index=0&zone=main HTTP/1.1
-CONTENT-TYPE: text/xml; charset="utf-8"
-User-Agent: MusicCast/5.30 (Android)
-X-AppName: MusicCast/5.30 (Android)
-X-AppPort: 43697
-Accept: */*
-Accept-Language: en-us
-Host: 10.144.1.158
-Connection: Keep-Alive
-Accept-Encoding: gzip
-
-HTTP/1.1 200 OK
-Server: Network_Module/1.0 (CD-NT670D)
-Content-Type: application/json
-Content-Length: 19
-
+GET /YamahaExtendedControl/v1/netusb/manageMcPlaylist?bank=1&type=play&index=0&zone=main
 {"response_code":0}
